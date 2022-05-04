@@ -6,7 +6,7 @@
 
 In the early days of the R2 Builders, Mike Velcheck designed and supplied a PSI for club members around the world. His design has been the basis for most PSI's since, all sharing the same footprint, many with an abundance of LEDs and fancy swipe animations, none as simple and plug-n-play friendly as Mikes. In December of 2021 Mike passed away.
 
-This project aims to bring back Mike Velcheck's great PSI design, so that it may continue to make its way into droids. Using a donor unit, I reverse clumgeneered Mike's PCB, making a couple of very minor tweaks to the layout. An unused capacitor was removed, in it's place is a Devo Energy Dome. The resulting Eagle PCB and schematic files are found within, along with gerber files for production, and Mike's own instruction manual.
+This project aims to bring back Mike Velcheck's great PSI design, so that it may continue to make its way into droids. Using a donor unit, I reverse clumgeneered Mike's PCB, making a couple of very minor tweaks to the layout. An unused capacitor was removed, in it's place is a powerful Devo Energy Dome (a nod to Mike's involvement with RadioStar Band). The resulting Eagle PCB and schematic files are found within this repository, along with gerber files for production, firmware .bin and Mike's own instruction manual.
 
 **Usage** 
 
@@ -34,7 +34,7 @@ The PIC IC can be removed, and two wires run from a JEDI Display controller. Thi
 
 **Bill Of Materials**
 
-For LEDs, high brightness and 120 degree viewing angle is recommended. For standard R2-D2 colors, you'll need 6 red, 6 blue, 6 yellow, 6 green. In the US, SuperBrightLEDs sell suitable 5m LEDs for about 50c each. These offer better spread of color than typical cheap 5mm LEDs.
+The kit should coime will all parts needed, but if you'd like to build from scratch, here is a BOM for all parts. For LEDs, high brightness and 120 degree viewing angle is recommended. For standard R2-D2 colors, you'll need 6 red, 6 blue, 6 yellow, 6 green. In the US, SuperBrightLEDs sell suitable 5m LEDs for about 50c each. These offer better spread of color than typical cheap 5mm LEDs.
 
  * U1 : PIC10F202-I/P 8-bit MCU (typically in an )
  * U2 : AS78L05RTR-E1 5V LDO
@@ -49,3 +49,7 @@ For LEDs, high brightness and 120 degree viewing angle is recommended. For stand
  * P1 : 2-pin 2.54mm pitch screw terminal
  * P2 : 4-pin 2.54mm pitch screw terminal
  * JP1 & JP2 : 2.54mm 2-row 2-column male pin header
+
+**Firmware**
+
+The firmware .bin file in this repository was copied directly from one of Mike's PSI's. Unfortunately source code is unavailable. To program a blank PIC IC, you'll need a programmer such as a PicKit3.
